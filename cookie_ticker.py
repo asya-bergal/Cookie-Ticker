@@ -42,7 +42,6 @@ try:
     mail.select(label_name)
     result, data = mail.search(None, search_string)
     uid_list = data[0].split()
-    print uid_list
     if uid_list:
         last_id = max(uid_list) #most recent ID
 except:
