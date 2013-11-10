@@ -5,9 +5,10 @@ import os
 import time
 import socket
 import email
+import getpass
 
 username = raw_input("Enter your Gmail email address: ")
-password = raw_input("Enter your Gmail password: ")
+password = getpass.getpass("Enter your Gmail password: ")
 label_name = "inbox"
 
 #pattern for matching text in the form of "on/in + floor name"
